@@ -1,0 +1,20 @@
+/* Selector Universal */
+* {
+    color: red;
+}
+
+/* Selector de Tipo */
+h1 {
+    color: blue;
+}
+
+/* Selector por Clase */
+.titulo-h2 {
+    color: green;
+}
+
+/* Selector por ID */
+#btn {
+    background-color: darkorchid;
+    color: white;
+}
