@@ -1,0 +1,26 @@
+/* Especificidad 1 - !important */
+p {
+    color: rgb(253, 139, 0) !important;
+}
+
+/* Especificidad 2 - Estílos en Línea */
+p {
+    color: darkviolet;
+}
+
+/* Especificidad 3 - Identificadores */
+#blue {
+    color: blue;
+}
+
+/* Especificidad 4 - Clases o Pseudo-Clases o Atributos*/
+.green {
+    color: green;
+}
+
+
+/* Especificidad 5 - Elemento o Pseudo-Elementos */
+p {
+    color: rgb(255, 0, 0);
+}
+

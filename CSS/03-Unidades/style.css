@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Unidades Fijas - px, cm, mm, pt */
+.form-h2 {
+    font-size: 50px;
+}
+
+/* Unidades Relativas - em(16px), rem, vw, vh, % */
+.form {
+    font-size: 10px;
+    background-color: aqua;
+    width: 50vw; /* Indica que es el 50% del ancho de la pantalla */
+    height: 30vh; /* Indica que es el 30% del ancho de la pantalla */
+}
+
+.form-h2 {
+    font-size: 5em; /* =50px. % y em se heredan del valor de la caja contenedora, en este caso del form */
+}

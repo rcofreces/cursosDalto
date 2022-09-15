@@ -1,0 +1,5 @@
+* {
+    box-sizing: border-box; /* Hacemos que la caja siempre tenga el tamaño que queramos. Por ejemplo si le agregamos padding al contenido, la caja va a tener el mismo tamaño y lo que se va a ajustar es lo que contiene esa caja */
+    padding: 0;
+    margin: 0;
+}
