@@ -18,3 +18,19 @@ h1 {
     background-color: darkorchid;
     color: white;
 }
+
+/* Selector por Atributo */
+[atributo="porAtributo"] {
+    color: lightskyblue;
+}
+
+/* Selector por Descendiente */
+h2 p {
+    color: yellowgreen;
+}
+
+/* Selector por PseudoClase */
+b:hover {
+    background-color: black;
+    color: white;
+}
