@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Outline es un borde 
+pero sin afectar a las cajas (las deja del mismo tamaño) - No ocupa un espacio real en el DOM - Es muy usado en los inputs */
+
+.caja1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: auto; /* Centra los elementos que son bloques y no están posicionados */
+    border: 10px solid blue;
+}
+
+.caja2 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: auto;
+}

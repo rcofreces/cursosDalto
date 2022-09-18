@@ -1,5 +1,44 @@
 * {
-    box-sizing: border-box; /* Hacemos que la caja siempre tenga el tamaño que queramos. Por ejemplo si le agregamos padding al contenido, la caja va a tener el mismo tamaño y lo que se va a ajustar es lo que contiene esa caja */
+    box-sizing: border-box; /* Hacemos que la caja siempre tenga el tamaño que queramos. Por ejemplo si le agregamos padding al contenido, la caja va a tener el mismo tamaño y lo que se va a ajustar es lo que contiene esa caja */ /* Box-sizing: content-box - Todas las medidas se suman para dar el tamaño total de la caja (por ejemplo: caja + padding + borde) */
     padding: 0;
     margin: 0;
 }
+
+/* Box Model - Content (line-height), Padding (padding), Border (border), Margin (margin) */
+
+/* Cajas Block - Se ajustan al ancho de su contenedor */
+/* Cajas Inline - Se ajustan al ancho total del contenido */
+/* Cajas Inline-Block - Que se comporte como un elemento en línea pero puede adquirir propiedades de un elemento en bloque */
+
+body {
+    font-size: 20px;
+}
+
+h3, b, em {
+    border: 2px solid green;
+}
+
+h5 {
+    display: inline;
+    border: 2px solid green;
+}
+
+/* A los elementos en línea, no le podemos dar un width ni un height */
+
+/* width: 600px; /* Define el ancho de la caja */
+/* height: 100px; /* Define el alto de la caja */
+
+h2 {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: yellow; /* Es el color del fondo */
+    padding: 30px; /* Es la distancia entre el texto y la caja (o borde) */
+    border: 2px solid black; /* Es el borde de la caja contenedora */
+    margin: 10px; /* Es la distancia entre los bordes y las otras cajas */
+    text-align: center; /* Centra el contenido horizontalmente */
+    border-radius: 10px; /* Sirve para redondear los bordes */
+    box-shadow: 10px 10px 30px 0 blue; /* Nos permite darle sombra a las cajas - Eje X, Eje Y, Tamaño de Difumación, Cantidad de borde, Color */
+    text-shadow: 10px 10px 5px grey; /* Lo mismo que el box-shadow pero con el texto */
+    transform: rotate(-10deg); /* Rota la caja */
+}
+
