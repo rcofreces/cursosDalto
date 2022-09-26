@@ -2,22 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 900;
 }
 
-/* Outline es un borde 
-pero sin afectar a las cajas (las deja del mismo tamaño) - No ocupa un espacio real en el DOM - Es muy usado en los inputs */
+/* Position: Nos permite posicionar un elemento. Hacemos que adquiera 4 posiciones nuevas (top-rigth-bottom-left). Las propiedades top y left tienen mayor peso (hacen que bottom y right no funcionen si estan todas declaradas).
+    - Static: Es como si no estuviera posicionado.
+    - Relative: Conserva el espacio original de la caja.
+    - Absolute: No conserva el espacio original (reservado) de la caja. El tamaño de la caja se ajusta al contenido (como si fuera inline).
+    - Fixed: Es igual que absolute, pero la caja queda fijada.
+*/
+/* Z-Index: La forma en que va a estar un elemento por encima de otro. La caja que tenga el valor más alto, va a estar por delante. Funciona solo para las cajas posicionadas. Para que los hijos se vean por detrás de los padres, hay que ponerles un valor de -1 y en el padre no definirlo. */
 
 .caja1 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: red;
-    margin: auto; /* Centra los elementos que son bloques y no están posicionados */
-    border: 10px solid blue;
 }
 
 .caja2 {
-    width: 200px;
-    height: 200px;
-    background-color: yellow;
-    margin: auto;
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    position: relative;
+    /* top: 20px - Hace que la caja se mueva hacia abajo 50 px. */
+    /* right: 20px - Hace que la caja se mueva hacia la izquierda 50 px. */
+    /* bottom: 20px - Hace que la caja se mueva hacia arriba 50 px. */
+    /* left: 20px - Hace que la caja se mueva hacia la derecha 50 px. */
+    z-index: -1; 
 }
+
+.caja3 {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 75px; /* Con position absolute, si definimos algun parámetro (top-right-bottom-left) se mueve a partir del viewport o contenedor (solo si este está posicionado - relative). */
+}
+
+.caja4 {
+    width: 650px;
+    height: 650px;
+    background-color: yellow;
+    position: fixed;
+}
+
