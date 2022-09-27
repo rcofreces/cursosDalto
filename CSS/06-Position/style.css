@@ -11,6 +11,7 @@
     - Relative: Conserva el espacio original de la caja.
     - Absolute: No conserva el espacio original (reservado) de la caja. El tamaño de la caja se ajusta al contenido (como si fuera inline).
     - Fixed: Es igual que absolute, pero la caja queda fijada.
+    - Sticky: Es una mezcla entre relative y fixed. Conserva el espacio original de la caja. Se comporta en un fixed a partir de cuando se lo indicamos, por ejemplo margin-top: 100px (entonces a partir de los 100 px).
 */
 /* Z-Index: La forma en que va a estar un elemento por encima de otro. La caja que tenga el valor más alto, va a estar por delante. Funciona solo para las cajas posicionadas. Para que los hijos se vean por detrás de los padres, hay que ponerles un valor de -1 y en el padre no definirlo. */
 
@@ -41,9 +42,14 @@
 }
 
 .caja4 {
-    width: 650px;
-    height: 650px;
+    width: 150px;
+    height: 150px;
     background-color: yellow;
+}
+
+.fixed {
+    background-color: violet;
     position: fixed;
+    bottom: 50px;
 }
 

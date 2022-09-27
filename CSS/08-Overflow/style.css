@@ -1,0 +1,19 @@
+* {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+div {
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background: grey;
+    overflow: auto; /* Pone la barra para scroll si es necesario. */
+    /* overflow: scroll; - Pone la barra para scroll en X e Y. */
+    /* overflow-x: scroll - Pone el scroll en X e Y. */
+    /* overflow-y: hidden - Por si alguna de los dos scrolls no queremos que salgan. */
+}
+
+/* Las imágenes se ajustan automáticamente y nunca sobresalen de su contenido. Si movemos las imágenes y ponemos la propiedad overflow: hidden, la imágen se va a ver recortada. */

@@ -1,0 +1,20 @@
+/* La propiedad display modifica el comportamiento de las cajas (de una caja en particular) 
+    - Block: Ocupan todo el ancho de la pantalla.
+    - Inline: La caja sólo el ancho de su contenido.
+    - Inline-Block: La caja ocupa el ancho de su contenido pero le podemos definir su ancho y altura. Además permite poner elementos uno al lado de otro.
+    - Flex:
+    - Grid:
+*/
+
+* {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+div {
+    border: 5px solid blue;
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
